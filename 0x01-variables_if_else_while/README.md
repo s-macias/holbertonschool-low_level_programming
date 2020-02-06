@@ -1,0 +1,1 @@
+In this project, we'll learn to use loops and if statements in C.
