@@ -1,5 +1,7 @@
 #include<stdio.h>
-\* main - it prints a text using printf
+
+\**
+* main - it prints a text using printf
 * Return: Always 0 (Success)
 *\
 int main(void)
