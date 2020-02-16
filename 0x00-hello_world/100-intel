@@ -1,1 +1,2 @@
-gcc -S -masm=intel -mconsole main.c -o main.s
+#!bin/basH
+gcc -S -masm=intel -mconsole $CFILE
