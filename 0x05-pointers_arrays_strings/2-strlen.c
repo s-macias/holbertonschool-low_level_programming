@@ -2,6 +2,7 @@
 
 /**
 * _strlen - returns the length of a string
+* retur: i which is the length of the string
 * @s: string whose length will be calculated
 */
 
@@ -13,5 +14,5 @@ int _strlen(char *s)
 	{
 		s++;
 	}
-return(i);
+return (i);
 }
