@@ -5,7 +5,6 @@
 * _putchar - prints characters
 * return: 0 for success
 * @s: string to be printed
-* @length: length of the string
 */
 
 void print_rev(char *s)
@@ -16,7 +15,7 @@ void print_rev(char *s)
 	{
 		length++;
 	}
-	length = length -1;
+	length = length - 1;
 	for (; length >= 0; length--)
 	{
 		_putchar(s[length]);
