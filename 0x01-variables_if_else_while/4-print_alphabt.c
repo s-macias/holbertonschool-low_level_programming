@@ -2,18 +2,23 @@
 
 /**
  * main - it prints the alphabet in lowercase except q and e
- * Return: Always 0 (Success)
+ * Return: 0
  */
 
 int main(void)
 {
-	int i;
+	int i = 97;
 
-	for (i = 97; i <= 122; i++)
+	while(i <= 122)
 	{
-		if(i != 101 && i != 113)
+		if(i == 101 || i == 113)
+			i++;
+		else
+		{
 		putchar(i);
+		i++;
+		}
 	}
 putchar('\n');
-return (0);
+return(0);
 }
