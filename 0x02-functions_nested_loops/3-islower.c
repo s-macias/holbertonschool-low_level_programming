@@ -1,12 +1,10 @@
 #include "holberton.h"
 
 /**
- * _islower - checks for lowercase character.
- * _putchar - prints characters
- * Return: 1 for lowercase
- * Return: 0 if not lowercase
- * @c: character to check
- */
+* _islower - checks for lowercase character.
+* Return: 1 for lowercase, 0 otherwise
+* @c: character to check
+*/
 
 int _islower(int c)
 {
