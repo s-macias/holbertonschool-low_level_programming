@@ -7,22 +7,17 @@
 
 int main(void)
 {
-	int i = 48;
-	int j = 48;
+	int n = 0;
 
-	for (; i <= 57; i++)
+	for (; n <= 99; n++)
 	{
-		for (; j <= 57; j++)
+		putchar((n / 10) + '0');
+		putchar((n % 10) + '0');
+		if (n != 99)
 		{
-			putchar(i);
-			putchar(j);
-			if (!(i == 57 && j == 57))
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(',');
+			putchar(' ');
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
