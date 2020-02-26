@@ -2,8 +2,8 @@
 
 /**
  * _pow_recursion - returns the value of x raised to the power of y
- * _putchar - prints a character
- * @n: string to be printed
+ * @x: base number
+ * @y: exponent number
  * Return: x raised to the power of y
  */
 
