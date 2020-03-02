@@ -24,11 +24,14 @@ char *_strncpy(char *dest, char *src, int n)
 	length++;
 
 	if (n > length)
-		n = length;
-
+	{
+		for (; i > n; i++)
+			dest[i] = '\0';
+	}
 	src = countersrc;
 
 	for (; i < n; i++)
 		*counterdest = *countersrc;
+
 	return (counterdest);
 }
