@@ -1,4 +1,4 @@
-#include "holberton"
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -8,10 +8,10 @@
  * Return: 0
  */
 
-int main (int argc, char *arg[])
+int main(int argc, char __attribute__((__unused__)) *arg[])
 {
 	if (argc > 0)
-		printf(" %s\n", argc);
+		printf("%d\n", argc - 1);
 
-	return 0;
+	return (0);
 }
