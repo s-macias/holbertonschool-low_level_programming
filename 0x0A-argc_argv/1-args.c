@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main(int argc, char __attribute__((__unused__)) *arg[])
+int main(int argc, char __attribute__((__unused__)) *argv[])
 {
 	if (argc > 0)
 		printf("%d\n", argc - 1);
