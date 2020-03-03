@@ -1,6 +1,7 @@
-#include "holberton"
+#include "holberton.h"
 #include <stdio.h>
-
+#include <ctype.h>
+y
 /**
  * main - adds positive numbers
  * @argc: counts the number of arguments
@@ -8,7 +9,7 @@
  * Return: 0
  */
 
-int main (int argc, char *arg[])
+int main(int argc, char *argv[])
 {
 	int i = 0;
 	int sum = 0;
