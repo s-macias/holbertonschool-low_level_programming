@@ -1,4 +1,4 @@
-#include "holberton"
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -8,18 +8,14 @@
  * Return: 0
  */
 
-int main (int argc, char *arg[])
+int main(int argc, char *argv[])
 {
 	int i;
 
-	printf ("%s\n", argv[0]);
-
-	if (argc > 1)
+	for (i = 0; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			printf("argv[%d] = %s\n", count, argv[i]);
-		}
+		printf("%s\n", argv[i]);
+	}
 
 	return (0);
 }
