@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  *  *str_concat - concatenates two strings
@@ -36,7 +35,6 @@ char *str_concat(char *s1, char *s2)
 			   {
 				   str[n] = s2[j];
 				   n++;
-				   printf("%c\n", str[n]);
 			   }
 		   }
 		   else if (s2 == NULL)
@@ -45,18 +43,15 @@ char *str_concat(char *s1, char *s2)
 			   {
 				   str[n] = s1[i];
 				   n++;
-				   printf("%c\n", str[n]);
 			   }
 		   }
 		   for (n = 0; n <= i; n++)
 		   {
 			   str[n] = s1[n];
-			   printf("%c\n", str[n]);
 		   }
 		  for (; n <= i + j; n++)
 		  {
-			   str[n] = s2[n];
-			   printf("%c\n", str[n]);
+			  str[n] = s2[n - i - 1];
 		  }
 		   if (n == i + j + 1)
 			   str[n] = '\0';
