@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/**
+hhh/**
  * **alloc_grid - returns a pointer to a 2 dimensional array of integers.
  * malloc - allocates memory
  * @width: number of columns
@@ -25,13 +25,13 @@ int **alloc_grid(int width, int height)
 	if (p[i] == NULL)
 	{
 		for (; i >= 0; i--)
+		{
 			free(p[i]);
+		}
+			free(p);
 	}
 	for (; j < height; j++)
 		for (; i < width; i++)
 			p[j][i] = 0;
 	return (p);
-	for (; i >= 0; i--)
-		free(p[i]);
-	free(p);
 }
