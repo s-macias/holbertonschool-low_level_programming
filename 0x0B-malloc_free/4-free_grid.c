@@ -4,6 +4,7 @@
 
 /**
  * free_grid -  frees a 2 dimensional grid previously created
+ * free - frees allocated memory
  * @grid: pointer to array previously created
  * @height: number of rows in the grid
  * Return: void
