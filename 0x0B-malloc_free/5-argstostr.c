@@ -30,23 +30,25 @@ char *argstostr(int ac, char **av)
 {
 	int i, strn, cha, len_new_string, total = 0; char *p;
 
-	if (ac == 0 || av == NULL)
+	if (ac <= 0 || av == NULL)
 		return (NULL);
 
 	len_new_string = length_string(ac, av) + ac + 1;
 	p = malloc(sizeof(char) * len_new_string);
 	if (p == NULL)
 		return (NULL);
-	for (strn = 0; strn > ac; strn++)
+	for (strn = 0; strn < ac; strn++)
 	{
 		cha = 0;
 		while (av[cha])
 		{
-			strn[i] = av[cha];
+			p[i] = av[cha];
 			cha++;
 			i++;
 		}
-		strn[i] = '\n';
+		p[i] = '\n';
+		i++;
 	}
-	strn[i] = '\0';
+	p[i] = '\0';
+	return (p);
 }
