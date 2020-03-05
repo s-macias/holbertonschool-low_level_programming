@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n > lens2)
 		n = lens2;
-	totallen = lens1 + n + 1;
+	totallen = lens1 + n;
 	p = malloc(sizeof(char) * totallen);
 
 	if (p == NULL)
