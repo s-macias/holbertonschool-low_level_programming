@@ -38,11 +38,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[index] = s1[index];
 		index++;
 	}
-	while (index <= totallen)
+	while (index < totallen)
 	{
 		p[index] = s2[j];
 		index++;
 		j++;
 	}
+	if (index == totallen)
+		p[index] = '\0';
 	return (p);
 }
