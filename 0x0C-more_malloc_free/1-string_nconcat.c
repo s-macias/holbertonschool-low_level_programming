@@ -26,10 +26,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		lens2++;
 	}
+
 	if (n > lens2)
 		n = lens2;
 	totallen = lens1 + n;
-	p = malloc(sizeof(char) * totallen);
+	p = malloc(sizeof(char) * (totallen + 1));
 
 	if (p == NULL)
 		return (NULL);
