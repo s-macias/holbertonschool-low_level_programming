@@ -1,3 +1,7 @@
+
+#ifndef FUNCTION_POINTER_H
+#define FUNCTION_POINTER_H
+
 int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
@@ -8,3 +12,5 @@ int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
+
+#endif
