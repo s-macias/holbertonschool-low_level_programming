@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * init_dog - intilializes a variable type struct dog
+ * struct dog: creates variables
  * @d: struct to be initialized
  * @name: name of the dog
  * @age: age of the dog
