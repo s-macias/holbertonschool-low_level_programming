@@ -4,7 +4,7 @@
 /**
  * get_op_func - selects the correct function to perform the right operation
  * @s: operator
- * Return: pointer to functin given as a parameter
+ * Return: pointer to functiogggn given as a parameter
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -22,9 +22,16 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if (ops[i].op[0] == s[0]
+		if (ops[i].op[0] == s[0])
+		{
 		    return (ops[i].f);
+		}
 		i++;
+		else
+		{
+			printf("Error\n");
+			exit(99);
+		}
 	}
 	return (NULL);
 }
