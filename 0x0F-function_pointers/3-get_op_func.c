@@ -18,12 +18,12 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 
-	int i;
+	int i = 0;
 
 	while (i < 5)
 	{
-		if (*s == *ops[i][1])
-			return (*ops[i][1]);
+		if (ops[i].op[0] == s[0]
+		    return (ops[i].f);
 		i++;
 	}
 	return (NULL);
