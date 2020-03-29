@@ -45,3 +45,10 @@ Prototype: unsigned int flip_bits(unsigned long int n, unsigned long int m);
 You are not allowed to use the % or / operators
 File: 5-flip_bits.c
 
+ADVANCED
+
+Task 6 - checks the endianness.
+
+Prototype: int get_endianness(void);
+Returns: 0 if big endian, 1 if little endian
+File: 100-get_endianness.c
