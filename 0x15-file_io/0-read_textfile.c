@@ -1,12 +1,10 @@
 #include "holberton.h"
-#include <fcntl.h>
-#include <unistd.h>
 
 /**
  * read_textfile - reads a text file and prints it to the POSIX standard output
  * @filename: pointer to the file that will be read and printed
  * @letters: number of letters to read and print or 0 if the file cannot be
-opened or read or number of bytes is not what is expected
+ * opened or read or number of bytes is not what is expected
  *
  * Return: number of bytes returned
  */
