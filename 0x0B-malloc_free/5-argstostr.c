@@ -11,7 +11,7 @@
 
 int length_string(int ac, char **av)
 {
-	int strn, cha, sumofstrings, total = 0;
+	int strn = 0, cha = 0, sumofstrings = 0, total = 0;
 
 	for (; strn <= ac; strn++)
 	{
@@ -20,16 +20,17 @@ int length_string(int ac, char **av)
 			cha++;
 			sumofstrings++;
 		}
-
-		total = sumofstrings + ac + 1;
-		return (total);
 	}
+
+	total = sumofstrings + ac + 1;
+	return (total);
 }
 
 char *argstostr(int ac, char **av)
 {
-	int i, strn, cha, len_new_string, total = 0; char *p;
-
+	int i = 0, strn = 0, cha = 0, len_new_string = 0;
+	char *p;
+	
 	if (ac <= 0 || av == NULL)
 		return (NULL);
 
@@ -42,9 +43,8 @@ char *argstostr(int ac, char **av)
 		cha = 0;
 		while (av[cha])
 		{
-			p[i] = av[cha];
+			p[i] = *av[cha];
 			cha++;
-			i++;
 		}
 		p[i] = '\n';
 		i++;
