@@ -3,9 +3,9 @@
 /**
  * cap_string -  capitalizes all words of a string.
  * @s: string to modify
- * 
- * Return:  
- */ 
+*
+* Return: pointer to string modified
+*/
 
 char *cap_string(char *s)
 {
@@ -28,5 +28,5 @@ char *cap_string(char *s)
 		}
 		i++;
 	}
-	return(s);
+	return (s);
 }
