@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 	while (argv[i] != NULL)
 	{
-		while (argv[i][j] )
+		while (argv[i][j])
 		{
 			if (isdigit(argv[i][j]) == 0)
 			{
