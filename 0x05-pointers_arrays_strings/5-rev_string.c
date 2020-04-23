@@ -2,25 +2,22 @@
 
 /**
 * rev_string - reverses a string
-* return: 0 for success
+*
 * @s: string to be printed
 */
 
 void rev_string(char *s)
 {
 	int i = 0;
-	int j = 9;
-	char s2[10];
+	int s_length = 0;
+	char temp;
 
-	for (; i <= 9; i++)
+	while (s[s_length] != '\0')
+		s_length++;
+	while (i < s_length--)
 	{
-		s2[i] = s[i];
-		j--;
-	}
-
-	for (; j <= 9; j++)
-	{
-		s[j] = s2[i];
-		i++;
+		temp = s[i];
+		s[i++] = s[s_length];
+		s[s_length] = temp;
 	}
 }
