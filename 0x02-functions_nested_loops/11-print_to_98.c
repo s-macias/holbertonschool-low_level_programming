@@ -3,9 +3,8 @@
 
 /**
 * print_to_98 - it prints n-98 using standard library
-* _putchar - prints characters
-* printf - prints formatted text
 * @n: first number in the sequence
+* Return: nothing
 */
 
 void print_to_98(int n)
@@ -14,12 +13,23 @@ void print_to_98(int n)
 
 	if (n <= 98)
 	{
-		for (i = n; i <= 98; i++)
+		while (n <= 98)
+		{
 			printf("%d, ", n);
+			if (n != 98)
+				prinf(", ");
+			n++;
+		}
 	}
 	else
 	{
-		for (i = n; i >= 98; i--)
+		while (n >= 98)
+		{
 			printf("%d, ", n);
+			if (n != 98)
+				printf(", ");
+			n--;
+		}
 	}
+	printf("\n");
 }
