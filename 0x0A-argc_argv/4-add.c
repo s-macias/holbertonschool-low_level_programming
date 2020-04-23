@@ -1,7 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <ctype.h>
-y
+#include <stdlib.h>
+
 /**
  * main - adds positive numbers
  * @argc: counts the number of arguments
@@ -11,21 +12,29 @@ y
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
-	int sum = 0;
+	int i = 1, j =  0, sum = 0;
 
-
-	if ((isdigit(argv[argc][i]) != 1)
-	    printf ("Error\n");
-
-	if (argc > 1)
+	if (argc == 1)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			sum = sum + atoi(argv[i]);
-		}
+		printf("%d\n", 0);
+		return (0);
 	}
-		printf("%d\n", sum);
-
+	while (argv[i] != NULL)
+	{
+		while (argv[i][j] )
+		{
+			if (isdigit(argv[i][j]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
+		}
+		i++;
+	}
+	i = 1;
+	for (i = 1; i < argc; i++)
+		sum = sum + atoi(argv[i]);
+	printf("%d\n", sum);
 	return (0);
 }
