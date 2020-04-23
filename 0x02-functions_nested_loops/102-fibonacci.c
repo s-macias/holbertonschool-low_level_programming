@@ -10,9 +10,6 @@ int main(void)
 {
 	long int counter = 3, n1 = 0, n2 = 1, sum = 0;
 
-	printf("%lu, ", n1);
-	printf("%lu, ", n2);
-
 	while (counter <= 50)
 	{
 		sum = n1 + n2;
