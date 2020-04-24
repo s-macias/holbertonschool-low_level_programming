@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
  * main - prints the min. # of coins to make change for a given amount
- * @argc - # of arguments
- * @argv - pointer to the argument array passed to the program
+ * @argc: number of arguments
+ * @argv: pointer to the argument array passed to the program
  * Return: cents, which is the number of coins to return
 */
 
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	}
 	amount = atoi(argv[1]);
 	if (amount < 0)
-		printf("0\n");
+		amount = 0;
 	while (amount != 0)
 	{
 		cents += (amount / coins[i]);
