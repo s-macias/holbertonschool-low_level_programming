@@ -5,8 +5,8 @@
  * @h: head of the linked list to print
  *
  * Return: elements of the linked list
-
 */
+
 size_t print_list(const list_t *h)
 {
 	int node_number = 0;
