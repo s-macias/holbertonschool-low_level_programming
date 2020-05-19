@@ -2,11 +2,10 @@
 #define DOG_H
 
 /**
- * struct dog: creates variables
- * @d: struct to be initialized
+ * struct dog - creates structure for dogs
  * @name: name of the dog
  * @age: age of the dog
- * @owner dog's owner
+ * @owner: dog's owner
  */
 
 struct dog
