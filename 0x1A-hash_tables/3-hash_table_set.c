@@ -28,8 +28,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (aux->value != NULL)
 			{
 				free(aux->value);
-				aux->value = strdup(value); /** free it before?*/
+				aux->value = strdup(value);
+				return (1);
 			}
+
 		}
 		aux = aux->next;
 	}
