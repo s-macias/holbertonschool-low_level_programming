@@ -2,7 +2,7 @@
 
 /**
 * hash_table_print - prints a hash table
-* @@ht: hash table
+* @ht: hash table
 *
 * Return: None
 */
@@ -10,16 +10,21 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int idx = 0;
+	hash_node_t *aux;
 
 	if (ht == NULL)
 		return;
 	printf("{");
-	while (ht->array[idx] != NULL)
+	for (; idx < ht->size; idx++)
 	{
-		printf("'%s': '%s'", ht->array[idx]->key, ht->array[idx]->value);
-		if (ht->array[idx]->next != NULL)*/
-			printf(",");
-		ht->array[idx] = ht->array[idx]->next;
+		aux = ht->array[idx];
+		while (aux != NULL)
+		{
+			printf("'%s': '%s'", aux->key, aux->value);
+			aux = aux->next;
+			/*if (aux->next != NULL)*/
+			printf(", ");
+		}
 	}
 	printf("}\n");
 }
