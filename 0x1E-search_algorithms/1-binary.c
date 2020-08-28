@@ -30,7 +30,6 @@ int binary_search(int *array, size_t size, int value)
 				printf("%d, ", array[i]);
 		}
 		pivot = (start + end) / 2;
-		printf("pivot is %d\n", (int)pivot);
 		if (array[pivot] == value)
 			return (pivot);
 		else if (array[pivot] > value)
